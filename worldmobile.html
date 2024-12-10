@@ -14,7 +14,7 @@
 <body>
     <header class="header_worldmobile">
         <div class="header__top">
-            <div>
+            <div style="display: flex; align-items: center;">
                 <a class="header__logo">
                     <i class="logoicon">
                         <img src="assets/images/logo-dt.png" style="height: 53px; width: 240px;" alt="">
@@ -22,27 +22,28 @@
                 </a>
                 <form class="header__search">
                     <input type="text" class="input_search" placeholder="Bạn tìm gì..">
-                    <button class="item_search">
-                        <i class="fa fa-search"></i>
-                    </button>
+                
+                     <i class="fa fa-search"></i>
+                    
                 </form>
-                <div class="profile">
-                    <a class="name_order">
+                <div class="profile" >
+                    <a href ="" class="name_order">
                         <i class="fas fa-user"></i>
                         Đăng nhập
                     </a>
                 </div>
                 <div class="box-cart">
-                    <a class="cart_number">
+                    <a href="" class="cart_number">
                         <i class="fas fa-shopping-cart"></i>
                         Giỏ hàng
                     </a>
                 </div>
-                <a class="header__address">
-                    <i class="fas fa-shopping-cart"></i>
+                <a href="" class="header__address">
+                    <i class="fas fa-map-marker-alt"></i>
                     <span>
                         Hồ Chí Minh
                     </span>
+                    <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -66,6 +67,7 @@
                             <img src="assets/images/phu-kien-24x24.png" alt="">
                         </i>
                         <span>Phụ kiện</span>
+                        <!-- <i class="fas fa-arrow-down"></i> -->
                     </li>
                     <li>
                         <i>
@@ -89,8 +91,10 @@
                     <li>
                         <i>
                             <img src="assets/images/may-cu-24x24.png " alt="">
+                           
                         </i>
                         <span>Máy cũ, thu cũ</span>
+                        <i class="fas fa-arrow-down"></i>
                         <div class="nav-limit-old">
                             <span>Máy cũ, thu cũ</span>
                             <div class="item-sim-old">
@@ -111,6 +115,7 @@
                             <img src="assets/images/PC-24x24.png " alt="">
                         </i>
                         <span>PC,Máy in</span>
+                        <i class="fas fa-arrow-down"></i>
                         <div class="nav-limit">
                             <div class="item-sim">
                                 <strong>Pc,Màn hình</strong>
@@ -153,6 +158,7 @@
                             <img src="assets/images/sim-24x24.png" alt="">
                         </i>
                         <span>Sim,thẻ cào</span>
+                        <i class="fas fa-arrow-down"></i>
                         <div class="nav-limit-sim">
                             <div class="item-sim-sim">
                                 <a href="">
@@ -175,14 +181,14 @@
                 </ul>
             </div>
         </div>
-        <!-- <div class="header__left">
+         <div class="header__left">
             <img src="assets/images/header-left.png"
-                style=" height: 65px; position:absolute; top:4px;left: 0; z-index: 1;" alt="">
+                style=" height: 96px; position:absolute; top:4px;left: 0; z-index: 1;" alt="">
         </div>
         <div class="header__right">
             <img src="assets/images/header-right.png"
-                style="height: 75px;position: absolute; top: 0px;right: 0;z-index: 1; " alt="">
-        </div> -->
+                style="height: 96px;position: absolute; top: 0px;right: 9px;z-index: 1; " alt="">
+        </div> 
     </header>
     <div class="body_home">
         <div class="main_container">
@@ -197,37 +203,46 @@
                 </div>
             </div>
             <ul class="product_tab">
-                <li>
-                    <a>
+                <li style="   background-color: #FFF6E3;  border-top-left-radius: 16px;" >
+                    <a href="" >
                         <img src="assets/images/9d48fbf6fa659fdb2e365e129a1f0fc7.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="">
                         <img src="assets/images/8213bb2739d01ceaeb9b5d283bc2ec5c.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="">
                         <img src="assets/images/a3bbf2f08eed862b8f6a9db2b228468f.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <span>Điện thoại </span>
+                    <a href="">
+                         <span>Điện thoại
+
+                         </span>
+                    </a>
+                    
                 </li>
                 <li>
-                    <span>Apple</span>
+                    <a href="">
+                        <span>Apple</span>
+                    </a>
                 </li>
                 <li>
-                    <span>Laptop</span>
+                    <a href="">   <span>Laptop</span></a>
+                 
                 </li>
                 <li>
-                    <span>Phụ kiện</span>
+                   <a href=""> <span>Phụ kiện</span></a>
                 </li>
                 <li>
-                    <span>Đồng hồ</span>
+                 <a href="">   <span>Đồng hồ</span></a>
                 </li>
             </ul>
+            <div class="distance"></div>
             <div class="space">
 
             </div>
@@ -255,7 +270,7 @@
                                 <div class="item-lable"></div>
                                 <div class="item-img">
                                     <img src="assets/images/realme-c65-purple-thumb-600x600.jpg" alt="">
-                                    <!-- <img src="assets/images/label-tgdd-200x200.png" style="height: 45px; width: 45px; position: absolute ;left: 0; bottom: 30px;" alt=""> -->
+                                  
                                 </div>
                                 <p>
                                     <img src="assets/images/ac50d5234940f9d40057efab524f7b02.png"
@@ -267,7 +282,9 @@
                                     <span>HD+</span>
                                     <span>6.67</span>
                                 </div>
-                                <strong class="price">4.300.000</strong>
+                                <div class="price">
+                                    <strong class="price-realme">4.300.000</strong>
+                                </div>
                                 <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <b>3.9</b>
@@ -279,9 +296,7 @@
                                 <div class="item-lable"></div>
                                 <div class="item-img">
                                     <img src="assets/images/realme-c65-purple-thumb-600x600.jpg" alt="">
-                                    <img src="assets/images/label-tgdd-200x200.png"
-                                        style="height: 45px; width: 45px; position: absolute ;bottom: 0; left: 0;"
-                                        alt="">
+                                  
                                 </div>
                                 <p>
                                     <img src="assets/images/ac50d5234940f9d40057efab524f7b02.png"
@@ -293,7 +308,9 @@
                                     <span>HD+</span>
                                     <span>6.67</span>
                                 </div>
-                                <strong class="price">4.300.000</strong>
+                                <div class="price">
+                                    <strong class="price-realme">4.300.000</strong>
+                                </div>
                                 <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <b>3.9</b>
@@ -305,9 +322,7 @@
                                 <div class="item-lable"></div>
                                 <div class="item-img">
                                     <img src="assets/images/realme-c65-purple-thumb-600x600.jpg" alt="">
-                                    <img src="assets/images/label-tgdd-200x200.png"
-                                        style="height: 45px; width: 45px; position: absolute ;bottom: 0; left: 0;"
-                                        alt="">
+                                  
                                 </div>
                                 <p>
                                     <img src="assets/images/ac50d5234940f9d40057efab524f7b02.png"
@@ -319,7 +334,9 @@
                                     <span>HD+</span>
                                     <span>6.67</span>
                                 </div>
-                                <strong class="price">4.300.000</strong>
+                                <div class="price">
+                                    <strong class="price-realme">4.300.000</strong>
+                                </div>
                                 <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <b>3.9</b>
@@ -331,9 +348,7 @@
                                 <div class="item-lable"></div>
                                 <div class="item-img">
                                     <img src="assets/images/realme-c65-purple-thumb-600x600.jpg" alt="">
-                                    <img src="assets/images/label-tgdd-200x200.png"
-                                        style="height: 45px; width: 45px; position: absolute ;bottom: 0; left: 0;"
-                                        alt="">
+                                  
                                 </div>
                                 <p>
                                     <img src="assets/images/ac50d5234940f9d40057efab524f7b02.png"
@@ -345,7 +360,9 @@
                                     <span>HD+</span>
                                     <span>6.67</span>
                                 </div>
-                                <strong class="price">4.300.000</strong>
+                                <div class="price">
+                                    <strong class="price-realme">4.300.000</strong>
+                                </div>
                                 <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <b>3.9</b>
@@ -357,9 +374,7 @@
                                 <div class="item-lable"></div>
                                 <div class="item-img">
                                     <img src="assets/images/realme-c65-purple-thumb-600x600.jpg" alt="">
-                                    <img src="assets/images/label-tgdd-200x200.png"
-                                        style="height: 45px; width: 45px; position: absolute ;bottom: 0; left: 0;"
-                                        alt="">
+                                  
                                 </div>
                                 <p>
                                     <img src="assets/images/ac50d5234940f9d40057efab524f7b02.png"
@@ -371,7 +386,9 @@
                                     <span>HD+</span>
                                     <span>6.67</span>
                                 </div>
-                                <strong class="price">4.300.000</strong>
+                                <div class="price">
+                                    <strong class="price-realme">4.300.000</strong>
+                                </div>
                                 <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <b>3.9</b>
@@ -383,9 +400,7 @@
                                 <div class="item-lable"></div>
                                 <div class="item-img">
                                     <img src="assets/images/realme-c65-purple-thumb-600x600.jpg" alt="">
-                                    <img src="assets/images/label-tgdd-200x200.png"
-                                        style="height: 45px; width: 45px; position: absolute ;bottom: 0; left: 0;"
-                                        alt="">
+                                  
                                 </div>
                                 <p>
                                     <img src="assets/images/ac50d5234940f9d40057efab524f7b02.png"
@@ -397,14 +412,15 @@
                                     <span>HD+</span>
                                     <span>6.67</span>
                                 </div>
-                                <strong class="price">4.300.000</strong>
+                                <div class="price">
+                                    <strong class="price-realme">4.300.000</strong>
+                                </div>
                                 <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <b>3.9</b>
                                 </div>
                             </a>
                         </li>
-                    </ul>
                 </div>
 
             </div>
