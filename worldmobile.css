@@ -674,6 +674,11 @@ width: 1200px;
     
     
 }
+.people-search ul li a
+{
+    text-decoration: none;
+    color: black;
+}
 .footer-section
 {
     max-width: 1220px;
