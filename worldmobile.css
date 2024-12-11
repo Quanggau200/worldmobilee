@@ -743,10 +743,25 @@ margin: 10px 10px;
     .header__left img[src="assets/images/header-left.png"],
     .header__right img[src="assets/images/header-right.png"]
     {
-       height: 96px;
-       width: 96px;
+      display: none;
     }
    
+}
+@media (max-width: 1650px){
+    .header__left,.header__right
+    {
+        position: absolute
+
+        
+    }
+
+    .header__left img[src="assets/images/header-left.png"],
+    .header__right img[src="assets/images/header-right.png"]
+    {
+        position: absolute;
+        width: 150px;
+    }
+    
 }
 /* @media only screen and(  max-width:1960px)
 {
