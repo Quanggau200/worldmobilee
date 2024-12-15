@@ -791,7 +791,8 @@ body {
 /* --mobile */
 .nav_overlay,
 .toggle,
-.header__mobile {
+.header__mobile,
+.item-slider {
     display: none;
 }
 
@@ -868,7 +869,7 @@ body {
     .header__search {
         display: none;
     }
-   
+
     .header__top__mobile {
         background-image: url('assets/images/logo-mb.png');
         height: 41px;
@@ -960,7 +961,7 @@ body {
         height: 35px;
         background-color: white;
         position: relative;
-       
+
 
     }
 
@@ -1114,7 +1115,7 @@ body {
     .toggle {
         display: block;
     }
-  
+
 
     .nav_overlay {
 
@@ -1127,7 +1128,7 @@ body {
         display: none;
 
     }
-    
+
 
     .header__main__mobile {
         position: fixed;
@@ -1142,10 +1143,10 @@ body {
         transition: transform 0.3s ease-in-out;
 
     }
-    #toggle-menu:checked ~ .header__main__mobile
-    {
+
+    #toggle-menu:checked~.header__main__mobile {
         transform: translateX(0);
-        
+
     }
 
     .main_menu_mobile li {
@@ -1200,15 +1201,15 @@ body {
 
 
     }
-    .dropdown ::before
-    {
+
+    .dropdown ::before {
         transform: rotate(90deg);
         content: '';
         border-left: 8px;
         border-right: 8px;
         right: -4px;
-        position: absolute; 
-        top: calc(50% - 5px )
+        position: absolute;
+        top: calc(50% - 5px)
     }
 
     .submenu p {
@@ -1269,7 +1270,7 @@ body {
         color: red;
     }
 
- 
+
 
     .main_menu_mobile>li:hover>.dropdown {
         background-color: white;
@@ -1280,29 +1281,29 @@ body {
         display: block;
         background-color: white;
     }
-    
+
 
     /* body-mobile */
-    .item-slider{
+    .item-slider {
         background-color: white;
     }
-    .item-main-silder
-    {
-        width: 711px;
-        display: flex; 
-      
 
-        
+    .item-main-silder {
+        width: 711px;
+        display: flex;
+
+
+
     }
-    .item-left-silder
-    {
+
+    .item-left-silder {
         width: 100%;
-        max-width: 335.2px;  
-       
-       
+        max-width: 335.2px;
+
+
     }
-    .item-slot
-    {
+
+    .item-slot {
         display: flex;
         max-width: 350px;
         width: 100%;
@@ -1311,29 +1312,29 @@ body {
         padding: 10px 10px;
         justify-content: space-between;
     }
-    
-    .item-slot li
-    {
+
+    .item-slot li {
         text-decoration: none;
         list-style-type: none;
-        
+
         display: grid;
     }
-    .item-slot li a
-    {
+
+    .item-slot li a {
         width: 60px;
-        
+
     }
-    .item-slot li a img 
-    {
+
+    .item-slot li a img {
         max-height: 47px;
         min-height: 30px;
         border-radius: 8px;
     }
-    .item-slot li a span{
+
+    .item-slot li a span {
         font-size: 12px;
         color: black;
     }
-  
+
 
 }
