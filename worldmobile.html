@@ -21,29 +21,30 @@
 
 <body>
     <header class="header_worldmobile" style="position:sticky ;">
-        <div class="header__left">
-            <img src="assets/images/header-left.png" alt="">
-        </div>
         <div class="header__top">
-
             <div>
                 <div class="header__logo">
-                    <img src="assets/images/logo-dt.png" alt="" class="logoicon">
+                    <!-- <img src="assets/images/logo-dt.png" alt="" class="logoicon"> -->
                 </div>
                 <form action="" class="header__search">
                     <input type="text" name="" id="" class="input_search" placeholder="Bạn tìm gì...">
-                    <i class="fa fa-search"></i>
+                    <button type="submit" aria-label="button suggest search">
+                        <i class="icon-search"></i>
+                    </button>
+                    <div id="search-result"></div>
                 </form>
                 <div class="profile">    
                     <a href="" class="name_order">
-                        <i></i>
-                        Đăng nhập 
+                        <i></i>Đăng nhập 
+                        
                     </a>
                 </div>
-                
                     <a href="" class="shopping-cart">
-                        <i></i>
-                        Giỏ hàng 
+                        <div class="box-cart">
+                            <i class="iconnewglobal-whitecart"></i>
+                            <span class="cart-number"></span>
+                        </div>
+                        <span>Giỏ hàng</span>
                     </a>
                 
                 <a href="" class="header__address">
@@ -54,56 +55,69 @@
             <!-- mobile -->
             <!-- mobile -->
         </div>
-        <div class="header__right">
-            <img src="assets/images/header-right.png" alt="">
-        </div>
-        <div class="heaedr__main" style="max-width: 1220px; margin: auto; ">
+        <div class="heaedr__main">
             <div>
                 <ul class="main_menu">
                     <li>
+                        <a href="">
                         <i>
                             <img src="assets/images/phonne-24x24.png" alt="">
                         </i>
                         <span>Điện thoại</span>
+                    </a>
                     </li>
                     <li>
+                        <a href="">
                         <i>
                             <img src="assets/images/laptop-24x24.png" alt="">
                         </i>
                         <span>Laptop</span>
+                    </a>
                     </li>
-                    <li>
+                    <li >
+                        <a href=""></a>
                         <i>
                             <img src="assets/images/phu-kien-24x24.png" alt="">
                         </i>
-                        <span>Phụ kiện</span>
-                        <!-- <i class="fas fa-arrow-down"></i> -->
+                        <span class="has-child" >Phụ kiện</span>
+
+                    </a>
+                    <div ></div>
+                        
                     </li>
                     <li>
+                        <a href="">
                         <i>
                             <img src="assets/images/smartwatch-24x24.png " alt="">
                         </i>
                         <span>Smartwatch</span>
+                    </a>
                     </li>
                     <li>
+                        <a href="">
                         <i>
                             <img src="assets/images/watch-24x24.png " alt="">
                         </i>
                         <span>Đồng hồ</span>
+                    </a>
                     </li>
 
                     <li>
+                        <a href="">
                         <i>
                             <img src="assets/images/tablet-24x24.png " alt="">
                         </i>
                         <span>Tablet</span>
+                    </a>
                     </li>
-                    <li>
+                    <li >
+                        <a href="">
                         <i>
-                            <img src="assets/images/may-cu-24x24.png " alt="">
+                            <img src="assets/images/may-cu-24x24.png " alt="" >
 
                         </i>
-                        <span class="has-child">Máy cũ, thu cũ</span>
+                        <span class="has-child" >Máy cũ, Thu cũ</span>
+                    </a>
 
                         <div class="nav-limit-old">
                             <span>Máy cũ, thu cũ</span>
@@ -121,11 +135,12 @@
                         </div>
                     </li>
                     <li>
-                        <i>
+                        <a href="">
+                        <i style="margin-right: 2px;">
                             <img src="assets/images/PC-24x24.png " alt="">
                         </i>
-                        <span class="has-child">PC,Máy in</span>
-
+                        <span class="has-child" >PC, Máy in</span>
+                    </a>
                         <div class="nav-limit">
                             <div class="item-sim">
                                 <strong>Pc,Màn hình</strong>
@@ -164,15 +179,17 @@
                         </div>
                     </li>
                     <li>
+                        <a href="">
                         <i>
                             <img src="assets/images/sim-24x24.png" alt="">
                         </i>
-                        <span class="has-child">Sim,thẻ cào</span>
+                        <span class="has-child">Sim, Thẻ cào</span>
+                    </a>
                         <div class="nav-limit-sim">
                             <div class="item-sim-sim">
                                 <a href="">
                                     <img src="assets/images/5a48d18da9b8282909939cfbd156ef1a.png" alt="">
-                                    <span>Sim,thẻ cào</span>
+                                    <span>Sim, Thẻ cào</span>
                                 </a>
                                 <a href="">
                                     <img src="assets/images/54965e9976059f689c8905bfa5696b61.png" alt="">
@@ -182,10 +199,12 @@
                         </div>
                     </li>
                     <li>
+                        <a href="">
                         <i>
                             <img src="assets/images/tien-ich-24x24.png " alt="">
                         </i>
-                        <span>Dịch vụ, tiện ích</span>
+                        <span class="has-child">Dịch vụ tiện ích</span>
+                    </a>
                     </li>
                 </ul>
             </div>
@@ -1574,7 +1593,12 @@
 
 
         </div>
-
+        <!-- <div class="header__left">
+            <img src="assets/images/header-left.png" alt="">
+        </div>
+        <div class="header__right">
+            <img src="assets/images/header-right.png" alt="">
+        </div> -->
     </header>
 
 
