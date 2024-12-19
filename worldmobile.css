@@ -33,6 +33,11 @@ body {
 .header_worldmobile {
     background-color: #ffd400;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
 }
 
 .header__top {
@@ -363,6 +368,8 @@ body {
     display: flex;
     gap: 10px;
     padding: 5px 5px;
+    position: relative;
+    z-index: 99;
 }
 
 .nav-limit-old .item-sim-old {
@@ -422,16 +429,20 @@ body {
 }
 
 .home_product {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     padding-top: 10px;
     z-index: 1;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .home_product>img {
     height: 40px;
     width: 40px;
     background-size: 100%;
+   
 
 }
 
@@ -440,7 +451,18 @@ body {
     font-weight: 700;
     line-height: 40px;
     color: #1d2939;
-   
+    padding: 10px 0 0 5px;
+}
+
+.hot-product img
+{
+    position: absolute;
+    height: 69px;
+    width: 229px;
+    right: 0;
+    top: 13px;
+    z-index: 1;
+    
 }
 
 
@@ -456,7 +478,7 @@ body {
 }
 
 .product_tab {
-    margin-top: 10px;
+    margin-top: -10px;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -538,6 +560,10 @@ body {
     grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 10px;
 }
+.list-product-item a
+{
+    text-decoration: none;
+}
 
 .list-product img {
 
@@ -546,7 +572,16 @@ body {
 
 .item-lable {
     height: 23px;
-
+}
+.item-lable span
+{
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 11px;
+    border-radius: 2px;
+    padding: 3px;
+    margin-right: 4px;
+    font-weight: normal;
 }
 
 .item {
@@ -556,57 +591,89 @@ body {
 }
 
 .item-img {
+    position: relative;
+    padding-top: 10px;
     height: 163px;
     width: 163px;
     margin: 0 auto;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
+.img-voucher
+{
+    position: absolute;
+    height: 40px;
+    left: 0;
+    bottom: 7px;
+}
 
-.item p {
+.item .result-label {
     background: linear-gradient(to right, #af63cf, #3327a7);
     border-radius: 20px;
     display: inline-flex;
     max-width: 100%;
     padding-right: 8px;
 }
+.result-label span
+{
+    font-size: 10px;
+    line-height: 13px;
+    padding: 1px 0 0 0;
+}
 
 .item span {
     font-size: 10px;
     line-height: 20px;
-    color: white;
+   
     margin-left: 1px;
     padding-left: 3px;
 }
 
-.item .text {
+.item .text h3 {
     color: #1d2939;
     margin-top: 10px;
     font-size: 14px;
     font-weight: normal;
 }
-
+.list-product-item .item:hover> .text h3{
+    color: #288ad6;
+    transition: color 0.3s ease-in-out;
+}
+.list-product-item .item:hover>.item-img
+{
+    transform: translateY(-10px); 
+}
 .item-compare {
     margin-top: 5px;
 }
+.item-compare a
+{
+    text-decoration: none;
+}
 
 .item-compare span {
-    color: #333;
+    
+    color: #667085;
     line-height: 12px;
-    background-color: #eaebec;
+    background-color: #f2f4f7;
     padding: 2px 3px;
 }
 
 .price {
     margin-top: 10px;
 }
-
+.price-realme a
+{
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+}
 .rating {
     margin-top: 10px;
 }
 
 .rating i {
-    color: rgb(255, 212, 0);
+    color: #FEA200;
     height: 14px;
     width: 14px;
 }
@@ -617,18 +684,43 @@ body {
     font-weight: normal;
     margin-left: 2px;
 }
+.box-p
+{   
+    margin-top: 10px;
+}
 
-
+.item .box-p .price-old-box
+{
+    color: #98a2b3;
+    background-color: white;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: line-through;
+}
+.box-p .percent
+{
+    font-size: 13px;
+    color: red;
+}
+.item > a > .text:hover >.phonename
+{
+    background-color: red;
+    
+}
 .slider {
     width: 100%;
     max-width: 100%;
     margin: 15px 0px
 }
-
+.box-p a
+{   
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 .slider_bar {
 
-    width: 340px;
-    height: 40px;
+    width: 360px;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -642,18 +734,22 @@ body {
 .slider_bar span {
     color: white;
     line-height: 40px;
-    font-size: 20px;
-
+    font-size: 16px;
+    margin-right: 5px;
 
 }
 
+
 .slider_bar span label {
     background-color: white;
-    color: #ffd400;
-    ;
-    font-size: 20px;
-    padding: 2px 2px;
-    border-radius: 10px;
+    font-weight: 600;
+    color: #FEA200 !important;
+    margin: 0 1px;
+    font-size: 14px;
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    padding: 5px 5px;
 }
 
 .banner>div,
@@ -686,6 +782,7 @@ body {
 .people-search>div>span {
     font-weight: bold;
     font-size: 24px;
+    padding-top: 6px;
 }
 
 .banner .img-banner {
@@ -750,6 +847,7 @@ body {
     border-radius: 8px;
 }
 
+
 .readmore {
     margin: auto;
     display: flex;
@@ -760,7 +858,18 @@ body {
     color: #2a83e9;
     font-size: 15px;
 }
-
+.readmore .text-readmore a.has-child::after {
+    content: '';
+    border-top: 2px solid #288ad6;
+    border-left: 2px solid #288ad6;
+    height: 5px;
+    width: 5px;
+    border-right: 0;
+    transform: rotate(135deg);
+    margin: -3px 0 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
 .footer_worldmobile {
     margin: 0 auto;
     width: 1200px;
@@ -770,8 +879,8 @@ body {
 .people-search {
     background-color: white;
     border-radius: 12px;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 5px 20px 20px 20px;
+    margin: 10px auto;
 }
 
 .people-section ul {
@@ -784,7 +893,7 @@ body {
 .people-search ul li {
     padding: 2px 8px;
     border-radius: 16px;
-    margin: 3px 5px;
+    margin: 10px 8px 0 0;
     background-color: #f2f4f7;
 
 
@@ -792,20 +901,20 @@ body {
 
 .people-search ul li a {
     text-decoration: none;
-    color: black;
+    color: #1d2939;
 }
 
 .footer-section {
-    max-width: 1220px;
     display: flex;
     margin-top: 10px;
+    width: 100%;
 
 }
 
 .support p,
 .about p,
 .more-infor p {
-    padding: 10px 0;
+    margin: 10px 0 0;
 
 }
 
@@ -819,26 +928,115 @@ body {
     color: #2f80ed;
     text-decoration: none;
 }
-
-.support,
-.about,
-.more-infor,
-.website {
-    padding: 10px 10px;
+.support p a
+{
+    font-weight: bold;
+    
 }
-
 .website .logo-website ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 10px;
+    margin-top: 10px;
 }
-
+/* 
 .website .logo-website ul li img {
     height: 24px;
     width: 80px;
     padding-right: 10px;
+} */
+.website .logo-website ul li  {
+   
+    margin: 0 8px 8px 0 ;
 }
+ .logozone
+ {
+    background-image: url(//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi-min.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 80px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+    background-position: 0 -58px;
+ }
+ .logozone1
+ {
+    background-image: url(//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi-min.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 80px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+    background-position: -85px 0;
+ }
+ .logozone2
+ {
+    background-image: url(//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi-min.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 80px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+    background-position: -170px 0;
+ }
+ .logozone3
+ {
+    background-image: url(//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi-min.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 80px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+    background-position: -85px -90px;
+ }
+ .logonzone4
+ {
+   background-image: url(//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi-min.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 80px;
+    vertical-align: middle;
+    background-size: 250px 200px; 
+    background-position: -85px -120px;
+ }
+ .logozone5
+ {
+    background-image: url(//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi-min.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 80px;
+    vertical-align: middle;
+    background-size: 250px 200px; 
+    background-position: -85px -120px;
+ }
+ .logozone6
+ {
+    background-image: url(//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi-min.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 80px;
+    vertical-align: middle;
+    background-size: 250px 200px; 
+    background-position: 0 -120px;
+ }
+ .logozone7
+ {
+    background-image: url(//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi-min.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 80px;
+    vertical-align: middle;
+    background-size: 250px 200px; 
+    background-position: -170px -120px;
+ }
 
 .logo-contact div ul {
     list-style-type: none;
@@ -851,11 +1049,23 @@ body {
 
 .logo-contact div ul li {
     padding: 10px 0;
-    margin: 10px 10px;
+    margin-right: 10px;
 }
 
 .logo-contact div ul li span {
     font-size: 12px;
+}
+.more-infor a p.has-child::after {
+    content: '';
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    height: 5px;
+    width: 5px;
+    border-right: 0;
+    transform: rotate(225deg);
+    margin: -3px 0 0 5px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .support {
@@ -873,6 +1083,8 @@ body {
 .website {
     width: 30%;
 }
+
+
 
 /* --mobile */
 .nav_overlay,
@@ -897,15 +1109,16 @@ hr
 @media screen and (max-width:1920px) {
     .header__left img[src="assets/images/header-left.png"] {
         height: 63px;
-        width: 139px;
+        width: calc(( 100% - 1250px)/2);
         position: absolute;
-        left: 10px;
+        top: 0;
+        left: 11px;
 
     }
 
     .header__right img[src="assets/images/header-right.png"] {
         height: 63px;
-        width: 139px;
+        width: calc(( 100% - 1250px)/2);
         position: absolute;
         top: 0;
         right: 0;
